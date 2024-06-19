@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+
+  --color-very-dark-blue: hsl(234, 12%, 34%);
+  --color-grayish-blue: hsl(229, 6%, 66%);
+  --color-very-light-gray: hsl(0, 0%, 98%);
+
+  --popoins: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--popoins);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 30px 5px;
+}
+
+.inicial {
+  max-width: 250px;
+}
+
+.inicial .title {
+  font-weight: 200;
+  font-size: 20px;
+  color: var(--color-grayish-blue);
+}
+
+.inicial .sub__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.inicial p {
+  margin-top: 18px;
+  font-size: 12px;
+  color: var(--color-grayish-blue);
+  padding-right: 10px;
+  text-align: center;
+}
+
+.cards {
+  margin-top: 50px;
+}
+
+article {
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.1),
+    -10px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 22px;
+  max-width: 250px;
+}
+
+article h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+article p {
+  font-size: 11px;
+  margin-top: 5px;
+  color: var(--color-grayish-blue);
+}
+
+img {
+  width: 20%;
+  max-height: 20%;
+  object-fit: cover;
+}
+
+.imagen {
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+.verde {
+  border-top: solid 4px hsl(180, 62%, 55%);
+}
+
+.rojo {
+  border-top: solid 4px hsl(0, 78%, 62%);
+}
+
+.amarillo {
+  border-top: solid 4px hsl(34, 97%, 64%);
+}
+
+.azul {
+  border-top: solid 4px hsl(212, 86%, 64%);
+}
+
+@media only screen and (min-width: 768px) {
+  .inicial {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .inicial .title {
+    font-size: 24px;
+  }
+
+  .inicial .sub__title {
+    font-size: 22px;
+  }
+
+  .inicial .just__text {
+    display: flex;
+    justify-content: center;
+  }
+
+  .inicial .just__text p {
+    text-align: center;
+    padding-right: 0;
+    max-width: 500px;
+    font-size: 14px;
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  article {
+    max-width: 280px;
+    min-width: 250px;
+  }
+
+  article h3 {
+    font-size: 16px;
+  }
+
+  article p {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+  img {
+    width: 25%;
+    max-height: 25%;
+  }
+}
